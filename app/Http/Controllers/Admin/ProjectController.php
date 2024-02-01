@@ -107,6 +107,7 @@ class ProjectController extends Controller
 
             $path = Storage::put('project_images', $request->cover_image);
             $project_to_update['cover_image'] = $path;
+        
         }
 
         $project->update($project_to_update);
